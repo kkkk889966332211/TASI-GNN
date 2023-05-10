@@ -89,33 +89,7 @@ def main():
     end = time.time()
     print("Run time: %f s" % (end - start))
 
-    PATH = "./final_model/" + opt.dataset + "_model.pkl"
-    torch.save(model, PATH)
 
-    # top_K = [5, 10, 20]
-    # best_results = {}
-    # for K in top_K:
-    #     best_results['epoch%d' % K] = [0, 0]
-    #     best_results['metric%d' % K] = [0, 0]
-    #
-    # for epoch in range(opt.epoch):
-    #     print('-------------------------------------------------------')
-    #     print('epoch: ', epoch)
-    #     metrics, total_loss = train_test(model, train_data, test_data)
-    #     for K in top_K:
-    #         metrics['hit%d' % K] = np.mean(metrics['hit%d' % K]) * 100
-    #         metrics['mrr%d' % K] = np.mean(metrics['mrr%d' % K]) * 100
-    #         if best_results['metric%d' % K][0] < metrics['hit%d' % K]:
-    #             best_results['metric%d' % K][0] = metrics['hit%d' % K]
-    #             best_results['epoch%d' % K][0] = epoch
-    #         if best_results['metric%d' % K][1] < metrics['mrr%d' % K]:
-    #             best_results['metric%d' % K][1] = metrics['mrr%d' % K]
-    #             best_results['epoch%d' % K][1] = epoch
-    #     print(metrics)
-    #     for K in top_K:
-    #         print('train_loss:\t%.4f\tRecall@%d: %.4f\tMRR%d: %.4f\tEpoch: %d,  %d' %
-    #               (total_loss, K, best_results['metric%d' % K][0], K, best_results['metric%d' % K][1],
-    #                best_results['epoch%d' % K][0], best_results['epoch%d' % K][1]))
 
 
 if __name__ == '__main__':
