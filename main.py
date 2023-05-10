@@ -1,10 +1,5 @@
-#!/usr/bin/env python36
 # -*- coding: utf-8 -*-
-"""
-Created on July, 2018
 
-@author: Tangrizzly
-"""
 
 import argparse
 import pickle
