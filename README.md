@@ -1,6 +1,6 @@
 # TASI-GNN
 **The code will be made public after the paper is accepted, so stay tuned!**
-—————————————————————————————
+\n—————————————————————————————
 This is our implementation for the paper:
 
 Noise-reducing Graph Neural Network with Intent-target Co-action for Session-based Recommendation 
