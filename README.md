@@ -1,11 +1,14 @@
-# TASI-GNN
+# TASI-GNN 
 ——————————————————————————————————————————
 
 This is our implementation for the paper:
 
-Noise-reducing Graph Neural Network with Intent-target Co-action for Session-based Recommendation 
+"Noise-reducing Graph Neural Network with Intent-target Co-action for Session-based Recommendation"
 
-at Information Processing & Managament (IPM) 2023,
+at Information Processing & Managament (IPM) 2023
+
+[article link]([https://markdown.com.cn/basic-syntax/>links.html](https://www.sciencedirect.com/science/article/abs/pii/S0306457323002546?CMX_ID=&SIS_ID=&dgcid=STMJ_AUTH_SERV_PUBLISHED&utm_acid=273338640&utm_campaign=STMJ_AUTH_SERV_PUBLISHED&utm_in=DM415342&utm_medium=email&utm_source=AC_) "标题")
+
 
 ——————————————————————————————————————————
 
