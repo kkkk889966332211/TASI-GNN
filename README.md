@@ -7,8 +7,7 @@ This is our implementation for the paper:
 
 at Information Processing & Managament (IPM) 2023
 
-[article link]([https://markdown.com.cn/basic-syntax/>links.html](https://www.sciencedirect.com/science/article/abs/pii/S0306457323002546?CMX_ID=&SIS_ID=&dgcid=STMJ_AUTH_SERV_PUBLISHED&utm_acid=273338640&utm_campaign=STMJ_AUTH_SERV_PUBLISHED&utm_in=DM415342&utm_medium=email&utm_source=AC_) "标题")
-
+[article link]: https://www.sciencedirect.com/science/article/abs/pii/S0306457323002546?CMX_ID=&SIS_ID=&dgcid=STMJ_AUTH_SERV_PUBLISHED&utm_acid=273338640&utm_campaign=STMJ_AUTH_SERV_PUBLISHED&utm_in=DM415342&utm_medium=email&utm_source=AC_
 
 ——————————————————————————————————————————
 
