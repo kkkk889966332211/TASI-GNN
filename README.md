@@ -8,6 +8,7 @@ Noise-reducing Graph Neural Network with Intent-target Co-action for Session-bas
 at Information Processing & Managament (IPM) 2023,
 
 ——————————————————————————————————————————
+
 **If our paper and code are useful to you, please cite our paper:**
 ```
 @article{qiao2023noise,
