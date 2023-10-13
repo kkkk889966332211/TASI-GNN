@@ -1,5 +1,10 @@
+#!/usr/bin/env python36
 # -*- coding: utf-8 -*-
+"""
+Created on July, 2018
 
+@author: Tangrizzly
+"""
 
 import argparse
 import pickle
@@ -9,7 +14,7 @@ from model import *
 import os
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--dataset', default='RetailRocket', help='dataset name: /Tmall/Nowplaying/diginetica/yoochoose1_4/yoochoose1_64')
+parser.add_argument('--dataset', default='diginetica', help='dataset name: /Tmall/Nowplaying/diginetica/yoochoose1_4/yoochoose1_64')
 parser.add_argument('--batchSize', type=int, default=512, help='input batch size')
 parser.add_argument('--hiddenSize', type=int, default=100, help='hidden state size')
 parser.add_argument('--epoch', type=int, default=30, help='the number of epochs to train for')
@@ -22,13 +27,13 @@ parser.add_argument('--patience', type=int, default=5, help='the number of epoch
 parser.add_argument('--nonhybrid', action='store_true', help='only use the global preference to predict')
 parser.add_argument('--validation', action='store_true', help='validation')
 parser.add_argument('--valid_portion', type=float, default=0.1, help='split the portion of training set as validation set')
-parser.add_argument('--w_ne', type=float, default=1.2, help='neighbor weight') #digi：1.7 Tmall 0.9 Retail 1.2
-parser.add_argument('--gama', type=float, default=1.2, help='cos_sim') #digi：1.7, Tmall 1.5 Retail 1.2
+parser.add_argument('--w_ne', type=float, default=1.7, help='neighbor weight') #digi：1.7 Tmall 0.9 Retail 1.2
+parser.add_argument('--gama', type=float, default=1.7, help='cos_sim') #digi：1.7, Tmall 1.5 Retail 1.2
 
 opt = parser.parse_args()
 print(opt)
 os.environ['CUDA_VISIBLE_DEVICES'] = '0,1,2'
-torch.cuda.set_device(1)
+torch.cuda.set_device(0)
 
 def main():
     train_data = pickle.load(open('./' + opt.dataset + '/train.txt', 'rb'))
@@ -84,7 +89,8 @@ def main():
     end = time.time()
     print("Run time: %f s" % (end - start))
 
-
+    PATH = "./final_model/" + opt.dataset + "_model.pkl"
+    torch.save(model, PATH)
 
 
 if __name__ == '__main__':
